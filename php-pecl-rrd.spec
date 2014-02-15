@@ -13,8 +13,8 @@ Group:		Development/Languages
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	bde6c50fa2aa39090ed22e574ac71c5a
 URL:		http://pecl.php.net/package/rrd
+%{?with_tests:BuildRequires:    %{php_name}-cli}
 BuildRequires:	%{php_name}-devel >= 4:5.3.2
-BuildRequires:	php-pear
 BuildRequires:	rrdtool
 BuildRequires:	rrdtool-devel >= 1.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
