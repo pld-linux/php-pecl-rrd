@@ -7,7 +7,7 @@
 Summary:	PHP Bindings for rrdtool
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -17,6 +17,7 @@ URL:		http://pecl.php.net/package/rrd
 BuildRequires:	%{php_name}-devel >= 4:5.3.2
 BuildRequires:	rrdtool
 BuildRequires:	rrdtool-devel >= 1.3.0
+Obsoletes:	php-rrdtool < 1.2-9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
