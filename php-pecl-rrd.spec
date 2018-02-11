@@ -14,7 +14,7 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	b51c619505ac5cc1b76cd35e536de40a
 URL:		http://pecl.php.net/package/rrd
 %{?with_tests:BuildRequires:    %{php_name}-cli}
-BuildRequires:	%{php_name}-devel >= 4:5.3.2
+BuildRequires:	%{php_name}-devel >= 4:7.0.0
 BuildRequires:	rrdtool
 BuildRequires:	rrdtool-devel >= 1.3.0
 Obsoletes:	php-rrdtool < 1.2-9
