@@ -6,12 +6,12 @@
 %define		modname	rrd
 Summary:	PHP Bindings for rrdtool
 Name:		%{php_name}-pecl-%{modname}
-Version:	1.1.3
-Release:	2
+Version:	2.0.1
+Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-# Source0-md5:	bde6c50fa2aa39090ed22e574ac71c5a
+# Source0-md5:	b51c619505ac5cc1b76cd35e536de40a
 URL:		http://pecl.php.net/package/rrd
 %{?with_tests:BuildRequires:    %{php_name}-cli}
 BuildRequires:	%{php_name}-devel >= 4:5.3.2
